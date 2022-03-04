@@ -1,3 +1,3 @@
 # PROJECT-ProofOfHumanity
 
-Ledger innovation team Project.
+Ledger innovation lab Project.
