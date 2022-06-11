@@ -23,7 +23,7 @@ torch.manual_seed(random_seed)
 train_loader = torch.utils.data.DataLoader(
   torchvision.datasets.MNIST(root='./data', train=True, download=True,
                              transform=torchvision.transforms.Compose([
-                               torchvision.transforms.RandomAffine(degrees = (-0,0),translate=(0.2,0.2)),  
+                               torchvision.transforms.RandomAffine(degrees = (-0,0),translate=(0.3,0.3)),  
                                torchvision.transforms.ToTensor(),
                                
                              ])),
@@ -32,7 +32,7 @@ train_loader = torch.utils.data.DataLoader(
 test_loader = torch.utils.data.DataLoader(
   torchvision.datasets.MNIST(root='./data', train=False, download=True,
                              transform=torchvision.transforms.Compose([
-                               torchvision.transforms.RandomAffine(degrees = (-0,0),translate=(0.1,0.1)),  
+                               torchvision.transforms.RandomAffine(degrees = (-0,0),translate=(0.3,0.3)),  
                                torchvision.transforms.ToTensor(),
                                
                              ])),
@@ -121,10 +121,13 @@ Training with no translation and smaller learning rate of 0.01 on test with 0.2 
 Training with no translation and test on translation 0.2: 25%
 Training on translation 0.1 and test on no translation: 92% 
 Training on translation 0.2 and test on no translation: 80%
-Training on translation 0.1 and test on 0.1: 88%
+Training on translation 0.1 and test on 0.1: 88%   !!! feasable results if we ask the user to do another test
 Training on translation 0.1 and test on 0.2:  54%
 Training on tranlsation 0.2 and test on 0.2: 77%
 Training on translation 0.2 and test on 0.1: 81%
+Training on translation 0.3 and test on 0: 66%
+Training on translation 0.3 and test on 0.1: 68%
+Training on translation 0.3 and test on 0.1: 70%
 
 
 """
