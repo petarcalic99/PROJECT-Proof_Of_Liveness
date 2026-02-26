@@ -19,7 +19,7 @@ A comprehensive bibliography of 22 papers was assembled, covering:
 - Decentralized authentication & KYC via DLT
 - Mouse trajectory analysis and click fraud detection
 
-The research is collected in `Bibliographie/` and synthesized in the project specification documents at the root of the repository.
+The research is summarized in [`Bibliographie/README.md`](Bibliographie/README.md) and synthesized in the project specification documents at the root of the repository.
 
 ### Phase 2 — Neural Network Experimentation (Complete)
 
@@ -45,7 +45,7 @@ The experiments also cover:
 ### Phase 3 — On-Chain Integration (Next Step)
 
 The natural next phase is to **port the neural network inference into a StarkNet/Cairo smart contract** and wrap it in a zero-knowledge proof. The groundwork is laid:
-- The Cairo whitepaper has been studied (`Bibliographie/Cairo-WhitePaper.pdf`)
+- The Cairo whitepaper has been studied (see [Bibliography](Bibliographie/README.md#cairo----a-turing-complete-stark-friendly-cpu-architecture))
 - Manual CNN inference (no framework dependencies) has been implemented
 - Model architectures have been optimized for minimal memory footprint
 
@@ -83,11 +83,8 @@ To move from prototype to a usable system:
 │
 ├── Notebooks/                           # Supplementary notebooks
 │
-└── Bibliographie/                       # 22 research papers
-    ├── ZKSENSE.pdf                      #   ZK biometric sensing
-    ├── Cairo-WhitePaper.pdf             #   StarkNet's Cairo language
-    ├── RobustKYCviaDLT.pdf              #   KYC via distributed ledger
-    └── ...                              #   Adversarial ML, bot detection, etc.
+└── Bibliographie/
+    └── README.md                        # Annotated summaries of 22 research papers
 ```
 
 ## Tech Stack
